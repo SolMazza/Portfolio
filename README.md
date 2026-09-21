@@ -1,14 +1,9 @@
-<h1> 💠TEXTO💠</h1>
+<h1> 💠Portfólio💠</h1>
 
 <div>
-⚪Texto;
+⚪Portfólio de html, css e uma pitadinha de JS;
   <br>
-⚪Texto;
+⚪Entrega para 2 meses de curso do Instituto Percorre;
   <br>
-⚪Texto;
-  <br>
-⚪Texto;
-  <br>
-⚪Texto.
 
 </div>
