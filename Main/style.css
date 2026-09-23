@@ -52,7 +52,8 @@ h1 {
     font-family: "cooper-black-std", serif;
     font-weight: 400;
     color: var(--cor-laranjaAvermelhado);
-    margin-left: 25px;
+    text-align: center;
+    width: 30%;
 }
 
 nav {
@@ -60,13 +61,13 @@ nav {
         1px 2px 2px hsla(0, 78%, 73%, 0.514),
         2px 4px 4px hsla(0, 78%, 73%, 0.514);
     border-right: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: auto;
-    width: 70%;
+    width: 70dvw;
     background-color: var(--cor-begeAvermelhado);
 }
 
@@ -84,6 +85,9 @@ nav a:hover:not(.ativa) {
 }
 
 .ativa {
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: var(--cor-vermelho);
     color: var(--cor-begeAvermelhado);
 }
@@ -97,9 +101,10 @@ main {
 section#apresentacao {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 5px;
-    min-height: 40vh;
+    padding: 20px 20px 0px;
+    min-height: 35dvh;
     row-gap: 3px;
+
 }
 
 #containerApresentacao {
@@ -143,6 +148,7 @@ div#experiencia {
     position: absolute;
     z-index: 9;
     left: 19vw;
+    height: 18dvh;
 }
 
 
@@ -154,7 +160,7 @@ div#formacao {
     border-left: 4px solid var(--cor-laranjaAvermelhado);
     border-bottom: 4px solid var(--cor-laranjaAvermelhado);
     border-top: 4px solid var(--cor-laranjaAvermelhado);
-    width: 20vw;
+    max-width: 20dvw;
 }
 
 img#ifrs {
@@ -181,12 +187,13 @@ a#curriculo {
         0px 0px 8px hsla(0, 100%, 50%, 0.699);
 }
 
-article{
+article {
     display: flex;
-    height: 10vh;
+    height: 15dvh;
     align-items: center;
     justify-content: center;
 }
+
 a#curriculo:hover {
     border: 2px solid var(--cor-amarelo);
     background-color: var(--cor-vermelho);
@@ -208,6 +215,12 @@ h3 {
     color: var(--cor-laranjaAvermelhado);
 }
 
+h2 {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    color: var(--cor-laranjaAvermelhado);
+}
+
 section#habilidades {
     background-color: var(--cor-begeAvermelhado);
     box-shadow:
@@ -219,6 +232,63 @@ section#habilidades {
     width: 100%;
     height: 50vh;
     padding: 10px 5px 0px;
+}
+
+#estruturaHabilidade {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+#outrasHabilidades {
+    justify-content: center;
+    height: 80%;
+    padding: 10px 5px 0px;
+    width: 25%;
+    margin: 5px 30px;
+}
+
+h4 {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    color: var(--cor-laranjaAvermelhado);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor-bege);
+    margin-bottom: 5px;
+}
+
+#idiomas ul li img {
+    margin-bottom: 5px;
+    max-width: 20px;
+
+
+}
+
+#idiomas {
+    text-align: center;
+    color: var(--cor-bege);
+    border: 1px solid var(--cor-laranjaAvermelhado);
+    box-shadow:
+        1px 2px 2px hsla(0, 100%, 50%, 0.479),
+        0px 0px 4px hsla(207, 100%, 50%, 0.500),
+        3px 6px 6px hsla(0, 100%, 50%, 0.479);
+    background-color: var(--cor-laranja);
+    margin-top: 10px;
+    height: 40%;
+}
+
+#conhecimentoGerais {
+    margin-top: 10px;
+    height: 50%;
+    text-align: center;
+    color: var(--cor-bege);
+    border: 1px solid var(--cor-laranjaAvermelhado);
+    box-shadow:
+        1px 2px 2px hsla(207, 100%, 50%, 0.500),
+        0px 0px 4px hsla(0, 100%, 50%, 0.500),
+        3px 6px 6px hsla(207, 100%, 50%, 0.500);
+    background-color: var(--cor-laranja);
 }
 
 section#habilidades h3 {
@@ -246,10 +316,10 @@ div#linguaguemProgramacao {
     border: 2px outset var(--cor-laranja);
     background-color: var(--cor-bege);
     box-shadow:
-        1px 2px 2px hsla(219, 37%, 67%, 0.514),
-        2px 4px 4px hsla(219, 37%, 67%, 0.514),
-        4px 8px 8px hsla(219, 37%, 67%, 0.514),
-        5px 10px 10px hsla(219, 37%, 67%, 0.514);
+        1px 2px 2px hsla(219, 85%, 69%, 0.514),
+        0px 0px 4px hsla(0, 87%, 69%, 0.514),
+        0px 0px 6px hsla(0, 100%, 72%, 0.514),
+        4px 8px 8px hsla(219, 81%, 66%, 0.514);
 }
 
 .linguaguem img {
@@ -258,4 +328,24 @@ div#linguaguemProgramacao {
     height: 50%;
 }
 
-div#outrasHabilidades {}
+section#projetos {
+    margin-top: 10dvh;
+    width: 100%;
+}
+
+#tcc {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+#listaTCC img {
+    width: 15dvw;
+    height: auto;
+
+}
+
+#projetos H2{
+    text-align: center;
+    font-size: 2rem;
+}
