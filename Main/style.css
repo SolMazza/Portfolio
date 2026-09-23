@@ -37,6 +37,8 @@ body {
     background-color: var(--cor-bege);
     color: var(--cor-verde);
     font-family: "Bricolage Grotesque", sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -95,7 +97,7 @@ main {
 section#apresentacao {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 5px;
     min-height: 40vh;
     row-gap: 3px;
 }
@@ -166,6 +168,36 @@ img#fundatec {
     width: 10vw;
 }
 
+a#curriculo {
+    color: var(--cor-vermelho);
+    text-decoration: none;
+    border: 2px solid var(--cor-vermelho);
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: var(--cor-begeAvermelhado);
+    box-shadow:
+        0px 0px 2px hsla(0, 100%, 50%, 0.699),
+        0px 0px 4px hsla(0, 100%, 50%, 0.699),
+        0px 0px 8px hsla(0, 100%, 50%, 0.699);
+}
+
+article{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+a#curriculo:hover {
+    border: 2px solid var(--cor-amarelo);
+    background-color: var(--cor-vermelho);
+    color: var(--cor-bege);
+    box-shadow:
+        0px 0px 2px hsla(54, 100%, 50%, 0.699),
+        0px 0px 4px hsla(54, 100%, 50%, 0.699),
+        0px 0px 8px hsla(54, 100%, 50%, 0.699);
+}
+
+
 ul {
     list-style: none;
 }
@@ -214,9 +246,10 @@ div#linguaguemProgramacao {
     border: 2px outset var(--cor-laranja);
     background-color: var(--cor-bege);
     box-shadow:
-        1px 2px 2px hsla(0, 37%, 67%, 0.514),
-        2px 4px 4px hsla(0, 37%, 67%, 0.514),
-        4px 8px 8px hsla(0, 37%, 67%, 0.514);
+        1px 2px 2px hsla(219, 37%, 67%, 0.514),
+        2px 4px 4px hsla(219, 37%, 67%, 0.514),
+        4px 8px 8px hsla(219, 37%, 67%, 0.514),
+        5px 10px 10px hsla(219, 37%, 67%, 0.514);
 }
 
 .linguaguem img {
